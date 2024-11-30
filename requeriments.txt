@@ -1,0 +1,19 @@
+#Install of Required Libraries
+pandas
+numpy
+matplotlib
+seaborn
+pandas
+scikit-learn
+nltk
+openpyxl
+nltk
+#!python -m nltk.downloader stopwords
+stopwords
+#truecase
+wordcloud
+networkx
+time-python
+tqdm
+python-louvain
+bayoo-docx
