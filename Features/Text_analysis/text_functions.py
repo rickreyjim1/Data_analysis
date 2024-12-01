@@ -2,7 +2,7 @@
 
 import re
 import nltk
-from nltk.corpus import stopwords
+#from nltk.corpus import stopwords
 # nltk.download('punkt_tab')   # Download resources if needed
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
@@ -10,7 +10,7 @@ from collections import Counter
 
 #---------------------------------------- Data preparation ----------------------------------------#
 #---------------------------------------- Data cleaning ----------------------------------------#
-stop_words = list(stopwords.words('english'))  # Get stopwords for English
+#stop_words = list(stopwords.words('english'))  # Get stopwords for English
 lemmatizer = WordNetLemmatizer()
 
 #---------------------------------------- Function to obtain the common words ----------------------------------------#

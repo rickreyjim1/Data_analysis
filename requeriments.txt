@@ -2,18 +2,17 @@
 pandas
 numpy
 matplotlib
-seaborn
+#seaborn
 pandas
-scikit-learn
+#scikit-learn
 nltk
 openpyxl
-nltk
 #!python -m nltk.downloader stopwords
-stopwords
+#stopwords
 #truecase
-wordcloud
-networkx
+#wordcloud
+#networkx
 time-python
-tqdm
-python-louvain
+#tqdm
+#python-louvain
 bayoo-docx
