@@ -133,7 +133,7 @@ plot_word_count_distribution(df_data_cleaned, field, outputs_folder)
 
 # Plot of top values for sub datasets
 feature_top_values = get_top_values(df_data, columns_to_analyze)
-feature_top_values
+print(f"Top {feature_top_values}")
 plot_top_values(feature_top_values, outputs_folder)
 
 #  Plot of time features
@@ -185,11 +185,11 @@ for column in feature_columns:
     
 document.add_paragraph()
 document.add_heading("Notes", level=2)
-document.add_paragraph()
-document.add_paragraph(f"Unique values {feature_top_values}")
+document.add_page_break()
+#document.add_paragraph(f"Unique values {feature_top_values}")
 ##################
 plot_path = os.path.join(outputs_folder, "word_count_distribution.png")
-document.add_heading("Word count", level=2)
+document.add_heading("Word count of text fields analyzed {time_columns}", level=2)
 document.add_picture(plot_path, width=Inches(5.5))
 ##################
 

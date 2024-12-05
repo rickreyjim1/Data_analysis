@@ -79,7 +79,7 @@ else:
 
 #---------------------------------------- Reading the original data and preliminary missing values analysis ----------------------------------------#
 df_data = df.copy()
-#df_data_initial = df_data.copy()
+df_data_initial = df_data.copy()
 
 # Calculate the statistics to be sent to the document
 filled_stats = calculate_filled_fields(df_data_initial)
@@ -133,7 +133,6 @@ df_data_cleaned = calculate_word_count(df_data, cleaned_columns)
 print(df_data_cleaned.columns)
 field = "word_count"
 #plot_word_count_distribution(df_data_cleaned, field, outputs_folder)
-
 #---------------------------------------- Plot of top values for sub datasets ----------------------------------------#
 feature_top_values = get_top_values(df_data, columns_to_analyze)
 plot_top_values(feature_top_values, outputs_folder)
